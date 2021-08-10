@@ -8,8 +8,8 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div>
-      <h1>Homepage</h1>
-      <p>
+      <h1 className={styles.title}>Homepage</h1>
+      <p className={styles.text}>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum odit
         architecto commodi eius blanditiis voluptates libero nesciunt, hic
         officiis amet distinctio beatae, obcaecati enim dolor impedit corrupti
@@ -17,7 +17,7 @@ export default function Home() {
         id. Laudantium obcaecati commodi ducimus dolorem error, doloribus ea,
         dolorum architecto, magni molestias expedita!
       </p>
-      <p>
+      <p className={styles.text}>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum odit
         architecto commodi eius blanditiis voluptates libero nesciunt, hic
         officiis amet distinctio beatae, obcaecati enim dolor impedit corrupti
@@ -25,7 +25,9 @@ export default function Home() {
         id. Laudantium obcaecati commodi ducimus dolorem error, doloribus ea,
         dolorum architecto, magni molestias expedita!
       </p>
-      <Link href="/ninjas">See Ninja Listing</Link>
+      <Link href="/ninjas">
+        <a className={styles.btn} >See Ninja Listing</a>
+      </Link>
     </div>
   );
 }
